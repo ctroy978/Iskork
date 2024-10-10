@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources of Iskork</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f0e8; /* Light papyrus background */
+        }
+        h1 {
+            color: #5E4B3C;
+            text-align: center;
+        }
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .resource-item {
+            position: relative;
+            width: 100px; /* 1 inch at 96 DPI */
+            height: 100px; /* 1 inch at 96 DPI */
+        }
+        .resource-icon {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(94, 75, 60, 0.2);
+        }
+        .resource-popup {
+            position: absolute;
+            bottom: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #D2BCA0;
+            color: #5E4B3C;
+            padding: 5px 10px;
+            border-radius: 5px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+        .resource-item:hover .resource-popup {
+            opacity: 1;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            background-color: #D2BCA0;
+            color: #5E4B3C;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #B39976;
+            box-shadow: 0 2px 4px rgba(94, 75, 60, 0.2);
+        }
+        .back-button:before {
+            content: "←";
+            position: absolute;
+            left: -20px;
+            transition: all 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #B39976;
+        }
+        .back-button:hover:before {
+            left: 10px;
+        }
+        .omen_title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #5E4B3C;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            border-bottom: 2px solid #B39976;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">Back to Iskork</a>
+    <h1>Resources of Iskork</h1>
+    <div class="resource-grid">
+        <div class="resource-item">
+            <img src="images/wood.webp" alt="wood" class="resource-icon">
+            <div class="resource-popup">Wood</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/metal.webp" alt="metal" class="resource-icon">
+            <div class="resource-popup">Metal</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/pigment.webp" alt="pigment" class="resource-icon">
+            <div class="resource-popup">pigment</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/gems.webp" alt="gems" class="resource-icon">
+            <div class="resource-popup">Gems</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/fabric.webp" alt="fabric" class="resource-icon">
+            <div class="resource-popup">Fabric</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/dye.webp" alt="dye" class="resource-icon">
+            <div class="resource-popup">Dye</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/silk.webp" alt="spider_silk" class="resource-icon">
+            <div class="resource-popup">Spider Silk</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/hide.webp" alt="animal_hide" class="resource-icon">
+            <div class="resource-popup">Animal Hide</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/bones.webp" alt="bones" class="resource-icon">
+            <div class="resource-popup">Bones</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/clay.webp" alt="clay" class="resource-icon">
+            <div class="resource-popup">Clay</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/feather.webp" alt="feathers" class="resource-icon">
+            <div class="resource-popup">Feathers</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/flower.webp" alt="flowers" class="resource-icon">
+            <div class="resource-popup">Flowers</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/butter.webp" alt="butter" class="resource-icon">
+            <div class="resource-popup">Butter</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/celery.webp" alt="celery" class="resource-icon">
+            <div class="resource-popup">Celery</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/fire.webp" alt="fire_water" class="resource-icon">
+            <div class="resource-popup">Fire Water</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/fish.webp" alt="fish" class="resource-icon">
+            <div class="resource-popup">Fish</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/honey.webp" alt="honey" class="resource-icon">
+            <div class="resource-popup">Honey</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/kale.webp" alt="kale" class="resource-icon">
+            <div class="resource-popup">Kale</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/lemon.webp" alt="lemon_juice" class="resource-icon">
+            <div class="resource-popup">Lemon Juice</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/meat.webp" alt="yak_haunch" class="resource-icon">
+            <div class="resource-popup">Yak Haunch</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/peppers.webp" alt="murder_peppers" class="resource-icon">
+            <div class="resource-popup">Murder Peppers</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/pepper_juice.webp" alt="pepper_juice" class="resource-icon">
+            <div class="resource-popup">Pepper Juice</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/salt.webp" alt="salt" class="resource-icon">
+            <div class="resource-popup">Salt</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/squid.webp" alt="squid_ink" class="resource-icon">
+            <div class="resource-popup">Squid Ink</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/tater.webp" alt="potato" class="resource-icon">
+            <div class="resource-popup">Potato</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/wheat.webp" alt="wheat" class="resource-icon">
+            <div class="resource-popup">Wheat</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/void_crystal.webp" alt="void_crystal" class="resource-icon">
+            <div class="resource-popup">Void Crystal</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/cloud_cotton.webp" alt="cloud_cotton" class="resource-icon">
+            <div class="resource-popup">Cloud Cotton</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/firefly.webp" alt="essence_firefly" class="resource-icon">
+            <div class="resource-popup">Essence of Firefly</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/eagle_feather.webp" alt="eagle_feather" class="resource-icon">
+            <div class="resource-popup">Eagle Feather</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/liquid_silver.webp" alt="liquid_silver" class="resource-icon">
+            <div class="resource-popup">Liquid Silver</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/mimic_thread.webp" alt="mimic_thread" class="resource-icon">
+            <div class="resource-popup">Mimic Thread</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/dragon_glass.webp" alt="dragon_glass" class="resource-icon">
+            <div class="resource-popup">Dragon Glass</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/moon_dust.webp" alt="moon_dust" class="resource-icon">
+            <div class="resource-popup">Moon Dust</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/portable_hole.webp" alt="portable_hole" class="resource-icon">
+            <div class="resource-popup">Portable Hole</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/prismatic_scale.webp" alt="prismatic_scale" class="resource-icon">
+            <div class="resource-popup">Prismatic Scale</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/cobra_tooth.webp" alt="cobra_tooth" class="resource-icon">
+            <div class="resource-popup">Cobra Tooth</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/electric_eel.webp" alt="electric_eel" class="resource-icon">
+            <div class="resource-popup">Electric Eel</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/turkey_lips.webp" alt="turkey_lips" class="resource-icon">
+            <div class="resource-popup">Turkey Lips</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/merc.webp" alt="mercenary" class="resource-icon">
+            <div class="resource-popup">Mercenary</div>
+        </div>
+
+    </div>
+
+    <p class="omen_title">Powerful Items Beyond Imagining</p>
+    <div class="resource-grid">
+        <div class="resource-item">
+            <img src="images/qmark.webp" alt="mercenary" class="resource-icon">
+            <div class="resource-popup">Flesh-Eating Something</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/qmark.webp" alt="mercenary" class="resource-icon">
+            <div class="resource-popup">The Tater Who would be King</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/qmark.webp" alt="mercenary" class="resource-icon">
+            <div class="resource-popup">A Night Light from the Far Future</div>
+        </div>
+        <div class="resource-item">
+            <img src="images/qmark.webp" alt="mercenary" class="resource-icon">
+            <div class="resource-popup">Your Riz Goes into Overdrive</div>
+        </div>
+    </div>
+</body>
+</html>

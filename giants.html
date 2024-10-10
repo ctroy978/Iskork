@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giants of Iskork</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .race-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .race-image {
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            max-width: 200px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .race-description {
+            flex: 1;
+            min-width: 300px;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            background-color: #D2BCA0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .back-button:before {
+            content: "←";
+            position: absolute;
+            left: -20px;
+            transition: all 0.3s ease;
+        }
+            .back-button:hover {
+                background-color: #B39976;
+            }
+        .back-button:hover:before {
+            left: 10px;
+        }
+        @media (max-width: 600px) {
+            .race-image {
+                float: none;
+                margin-right: 0;
+                margin-bottom: 20px;
+                width: 100%;
+                max-width: none;
+            }
+        }
+        .omen_title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #5E4B3C;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            border-bottom: 2px solid #B39976;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">Back to Iskork</a>
+    <h1>Giants of Iskork</h1>
+    <div class="race-content">
+        <img src="images/giantsport.webp" alt="giant Portrait" class="race-image">
+        <div class="race-description">
+            <p>
+                In the realm of Iskork, where conflict is as common as breathing, the Giants have elevated drama to an art form, turning every molehill into a mountain and every whisper into a scandalous roar. These towering figures, draped in flowing togas and adorned with laurel wreaths, strut through their cloud-kissing citadels with all the grace of a raging rhinoceros but with twice the attitude.
+            </p>
+            <p>
+                Giant society is a never-ending soap opera, filled with dramatic gasps, exaggerated eye-rolls, backstabbings, and tears. Social gatherings inevitably devolve into a chaotic mix of toga parties, revenge plotting, and explosive debates about who has the biggest butt.
+            </p>
+            <p class="omen_title">Racial Traits</p>
+            <p>
+                Giants are friendly to all races and love to share their woes with anyone who will lend an ear.
+            </p>
+            <p>
+                Due to their dramatic nature, Giants must pay extra for mercenaries, as most find their constant drama unbearable.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

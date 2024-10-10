@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orks of Iskork</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .race-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .race-image {
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            max-width: 200px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .race-description {
+            flex: 1;
+            min-width: 300px;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            background-color: #D2BCA0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .back-button:before {
+            content: "←";
+            position: absolute;
+            left: -20px;
+            transition: all 0.3s ease;
+        }
+            .back-button:hover {
+                background-color: #B39976;
+            }
+        .back-button:hover:before {
+            left: 10px;
+        }
+        @media (max-width: 600px) {
+            .race-image {
+                float: none;
+                margin-right: 0;
+                margin-bottom: 20px;
+                width: 100%;
+                max-width: none;
+            }
+        }
+        .omen_title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #5E4B3C;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            border-bottom: 2px solid #B39976;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">Back to Iskork</a>
+    <h1>Orcs of Iskork</h1>
+    <div class="race-content">
+        <img src="images/orcport.webp" alt="Ork Portrait" class="race-image">
+        <div class="race-description">
+            <p>
+                In the war-torn world of Iskork, the Orcs stand out as a paradoxical blend of refined taste and insufferable behavior. Known for their impeccable fashion sense, these green-skinned warriors strut across battlefields in tailored suits, polished monocles, and jaunty top hats that would make even the most dapper penguin green with envy. Their war cries of "I demand to speak to your manager!" strike fear into the hearts of their enemies, rivaled only by the terror induced by their perfectly coordinated outfits.
+            </p>
+            <p>
+                Orc society is built upon a foundation of competitive complaining and militant etiquette. Tribes vie for supremacy not through mere combat prowess, but by achieving the coveted title of "Supreme Karen." This honor is bestowed upon the Orc who can send back the most dishes at restaurants, write the most scathing online reviews, and successfully get the most retail workers fired - all while maintaining a flawless manicure and not spilling a drop of their meticulously crafted bone broth tea. Their cuisine revolves around a carnivorous philosophy of "nose-to-tail" dining, with a twist: each cut of meat must be complained about in at least three unique ways before it can be deemed worthy of consumption. Orc dinner parties are thus legendary affairs, lasting days as guests nitpick every morsel, all while dressed in their finest evening wear and aggressively correcting each other's table manners.
+            </p>
+            <p class="omen_title">Racial Traits</p>
+            <p>
+                Being Karens is often considered a weakness, but the Orcs have found strength in the “Reee”. When purchasing goods from the caravans, Orcs get the best deals.
+            </p>
+            <p>
+                Their focus on etiquette and complaints has come at the cost of combat prowess, making them less effective in both defense and offense.
+            </p>
+            <p>
+                Orcs refuse to engage in direct conversation with Elves, preferring to shout at them from a distance.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

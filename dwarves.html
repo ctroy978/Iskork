@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dwarves of Iskork</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .race-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .race-image {
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            max-width: 200px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .race-description {
+            flex: 1;
+            min-width: 300px;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            background-color: #D2BCA0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .back-button:before {
+            content: "←";
+            position: absolute;
+            left: -20px;
+            transition: all 0.3s ease;
+        }
+            .back-button:hover {
+                background-color: #B39976;
+            }
+        .back-button:hover:before {
+            left: 10px;
+        }
+        @media (max-width: 600px) {
+            .race-image {
+                float: none;
+                margin-right: 0;
+                margin-bottom: 20px;
+                width: 100%;
+                max-width: none;
+            }
+        }
+        .omen_title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #5E4B3C;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            border-bottom: 2px solid #B39976;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">Back to Iskork</a>
+    <h1>Dwarves of Iskork</h1>
+    <div class="race-content">
+        <img src="images/dwarvesport.webp" alt="Dwarf Portrait" class="race-image">
+        <div class="race-description">
+            <p>
+                In the tumultuous land of Iskork, the Dwarves carve out a niche that's as unique as it is hairy. These vertically challenged, horizontally blessed folk have fully embraced the "Yee Haa" lifestyle, complete with the twang of an old lyre and the strum of a crooked washboard. Dwarven settlements are a sight to behold: vast underground caverns filled with the sounds of pickaxes, bar brawls, and the ever-present strumming of a poorly tuned lute.
+            </p>
+            <p>
+                The Dwarven dress code is simple yet profound. Boots, pants, and suspenders are mandatory, but shirts are strictly verboten. To cover one's torso hair is considered a grievous offense against nature and dwarfkind. Their exposed belly hair isn't just a fashion statement; it's a cosmic roadmap. Dwarven elders spend hours stroking their belly fuzz, claiming to divine everything from the weather to the optimal time for brewing moonshine. Young Dwarves eagerly await their first chest hairs, believing them to be the key to unlocking life's mysteries - or at least the location of the nearest underground tavern.
+            </p>
+            <p>
+                Dwarven culture revolves around three pillars: working hard, playing harder, and fighting hardest. Their music, a cacophonous blend of rock smashing and guttural yelling, is said to be so rough it can knock the color off of a gemstone. Fight clubs are not just popular; they're practically a mandatory social activity. Despite their rough-and-tumble lifestyle, Dwarves pride themselves on their simple values and disdain for the complicated drama that goes on in the world of the giants.
+            </p>
+            <p class="omen_title">Racial Traits</p>
+            <p>
+                Dwarves can divine future caravan cargo through their omen-fueled belly hair.
+            </p>
+            <p>
+                Despite sharing caves with Vampires, Dwarves consider puppet shows to be sort of creepy and always relocate when a Vampire tribe moves in.
+            </p>
+            <p>
+                Dwarves' love for brawling and loud music often leads to cave-ins, causing occasional loss of resources.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

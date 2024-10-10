@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iskork</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .race-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .race-card {
+            width: 200px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            position: relative;
+        }
+        .race-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .race-card h3 {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .race-info {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.8);
+            color: white;
+            padding: 10px;
+            overflow-y: auto;
+        }
+        .race-card:hover .race-info {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Land of IsKork</h1>
+    <div class="race-container" id="raceContainer"></div>
+
+    <script>
+        const races = [
+            { name: "Elves", image: "images/elves.webp", info: "Relaxed and casual, Elves are known for their affinity with the hippie lifestyle. But don't let their laid-back ways fool you. The Elves can go ham when they need to.", page: "elves.html" },
+            { name: "Dwarves", image: "images/dwarves.webp", info: "They like to work hard and play hard. Dwarves enjoy the underground scene. Rough music, rare cigars, and fight clubs are a way of life for the Dwarves.", page: "dwarves.html" },
+            { name: "Danks", image: "images/danks.webp", info: "Versatile and amphibious, Danks live for the prank and will flex on anyone who lets them.", page: "danks.html" },
+            { name: "Orcs", image: "images/orcs.webp", info: "Strong and resilient, Orcs compete for status in a fierce tribal culture. They are the ultimate Karens of Iskork, and they will go to war at the slightest insult.", page: "orcs.html" },
+            { name: "Spenz", image: "images/spenz.webp", info: "Small and brilliant, Spenz are known as the hermits of Iskork. But don't be fooled by their big cute eyes. The Spenz are planning something big.", page: "spenz.html" },
+            { name: "Giants", image: "images/giants.webp", info: "The giants are ruled by their own drama. For the giants, life is an endless tale about who hurt whose feelings.", page: "giants.html" },
+            { name: "Vampires", image: "images/vamps.webp", info: "With a strong sense of honor, Vampires spend their nights strutting their riz in an eternal quest to capture the most likes.", page: "vamps.html" },
+            { name: "Iskork", image: "images/map.webp", info: "The land of Iskork bleeds from war, but finally there is a chance for peace. A chance that depends on you throwing the biggest party of all time.", page: "world.html" },
+            { name: "The Garden", image: "images/tree.webp", info: "A deep dive into the history of an ancient world.", page: "religion.html" },
+            { name: "Resources", image: "images/wood.webp", info: "You can't throw a rager without cool stuff. Check out all the resources you'll need to build the mother of all parties.", page: "resource.html" },
+        ];
+
+        const container = document.getElementById('raceContainer');
+
+        races.forEach(race => {
+            const card = document.createElement('div');
+            card.className = 'race-card';
+            card.innerHTML = `
+                <img src="${race.image}" alt="${race.name}">
+                <h3>${race.name}</h3>
+                <div class="race-info">
+                    <p>${race.info}</p>
+                </div>
+            `;
+            card.addEventListener('click', () => {
+                window.location.href = race.page;
+            });
+            container.appendChild(card);
+        });
+    </script>
+</body>
+</html>

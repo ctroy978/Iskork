@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iskork</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .race-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .race-image {
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            max-width: 200px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .race-description {
+            flex: 1;
+            min-width: 300px;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            background-color: #D2BCA0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .back-button:before {
+            content: "←";
+            position: absolute;
+            left: -20px;
+            transition: all 0.3s ease;
+        }
+            .back-button:hover {
+                background-color: #B39976;
+            }
+        .back-button:hover:before {
+            left: 10px;
+        }
+        @media (max-width: 600px) {
+            .race-image {
+                float: none;
+                margin-right: 0;
+                margin-bottom: 20px;
+                width: 100%;
+                max-width: none;
+            }
+        }
+        .omen_title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #5E4B3C;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            border-bottom: 2px solid #B39976;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">Back to Iskork</a>
+    <h1>Iskork</h1>
+    <div class="race-content">
+        <img src="images/map.webp" alt="Iskork" class="race-image">
+        <div class="race-description">
+            <p>
+                The eternal conflict in Iskork began with the Great Misunderstanding of the Twilight Hour, a peace gathering gone horribly wrong due to a series of cultural misunderstandings and an ill-timed vampire puppet show. Since then, the realm has been locked in a cycle of absurd warfare, with each race contributing to the chaos in its own unique way.
+            </p>
+            <p>
+                The Elves and Orcs maintain their feud, while the Giants fret over every battle. The Dwarves reluctantly join conflicts when their belly hair gives them a good omen. The Spenz deploy overly complex strategies, the Danks create mischief on all sides, and the Vampires remain oblivious to the true nature of the conflict.
+            </p>
+            <p class="omen_title">An Omen of Peace </p>
+            <p>
+                The chance for peace now stems from an unlikely source: the belly hair of King Hirsute, ruler of the Dwarves. During a belly hair reading, the king noticed a pattern in his navel fuzz resembling a tree with eight branches, each branch with one leaf. King Hirsute realized each branch represented each race of Iskork and interpreted it as a divine sign for peace.
+            </p>
+            <p>
+                King Hirsute has called for a grand peace summit, dubbed the "The Party," where representatives from all races will gather to gaze at King Hirsute’s belly hair and determine once and for all if it is truly a sign for peace. But getting all the races to attend won’t be easy. It requires a party of epic proportions. And it is up to you to make sure the party goes off without a hitch.
+            </p>
+            <p>
+                The summit presents a chance for either a new era of harmony or a lifetime of blood, tears, and battle. The fate of Iskork now hinges on the success of this party.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
