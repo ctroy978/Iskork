@@ -9,10 +9,38 @@
         .tribe-score {
             transition: background-color 0.3s ease;
         }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            background-color: #D2BCA0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .back-button:before {
+                content: "←";
+                position: absolute;
+                left: -20px;
+                transition: all 0.3s ease;
+            }
+
+            .back-button:hover {
+                background-color: #B39976;
+            }
+
+                .back-button:hover:before {
+                    left: 10px;
+                }
     </style>
 </head>
 <body class="bg-gray-100 p-8">
     <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
+        <a href="index.html" class="back-button">Back to Iskork</a>
         <h1 class="text-3xl font-bold mb-6 text-center text-indigo-600">Iskork Poetry Payout</h1>
 
         <div class="mb-6">
